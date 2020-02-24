@@ -13,3 +13,4 @@ from PIL import Image
 trainset = paddle.dataset.mnist.train()
 # 包装数据读取器，每次读取的数据数量设置为batch_size=8
 train_reader = paddle.batch(trainset, batch_size=8)
+
