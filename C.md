@@ -75,7 +75,7 @@
 
 26. <img src="image\image-20200227113455816.png" alt="image-20200227113455816" style="zoom:80%;" />
 
-27. <img src="C:\Users\13416\AppData\Roaming\Typora\typora-user-images\image-20200227113513176.png" alt="image-20200227113513176" style="zoom:67%;" />
+27. <img src="image\image-20200227113513176.png" alt="image-20200227113513176" style="zoom:67%;" />
 
 28.  判断两个浮点数是否相等：
 
