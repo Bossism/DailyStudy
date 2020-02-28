@@ -34,7 +34,57 @@
    - `chr()`：将整数转换成该编码对应的字符串（一个字符）。
    - `ord()`：将字符串（一个字符）转换成对应的编码（整数）。
 
-8. 
 
  
+
+### 2020/02/23
+
+1. Numpy 是Numerical Python的简称，是python中高性能科学计算和数学分析的基础包。Numpy提供了一个多维数组类型ndarray，具有矢量算术运算和复杂广播的能力。在使用python调用飞桨API完成深度学习任务的过程中，通常会使用Numpy实现数据预处理和一些模型指标的计算，飞桨中的Tensor数据可以很方便的和ndarray数组进行相互转换。
+
+2. ~~~ python
+   d = np.fromfile(',/work/housing.data',sep='')
+   ~~~
+
+3. ~~~python
+   a = np.random.rand(3,3)
+   np.save('a.npy',a)
+   
+   b = np.load('a.npy')
+   
+   check = (a==b).all() #检查a和b的数值是否一样  True
+   ~~~
+
+4. 
+
+<img src="C:\Users\13416\AppData\Roaming\Typora\typora-user-images\image-20200224181747378.png" alt="image-20200224181747378" style="zoom:50%;" />
+
+
+
+5.<img src="C:\Users\13416\AppData\Roaming\Typora\typora-user-images\image-20200224183531487.png" alt="image-20200224183531487" style="zoom:80%;" />
+
+6.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

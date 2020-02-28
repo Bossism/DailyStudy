@@ -20,15 +20,15 @@
 
 8. 双目运算符，比如➕，左右共有两个算子。  单目运算符，比如取反➖ ，只有一个算子
 
-9. <img src="C:\Users\13416\Documents\GitHub\DailyStudy\image\image-20200225154454900.png" alt="image-20200225154454900" style="zoom:70%;" />
+9. <img src="image\image-20200225154454900.png" alt="image-20200225154454900" style="zoom:70%;" />
 
 10. 关系运算符的优先级低于普通的算数运算符，但是高于赋值运算符=
 
-11. <img src="C:\Users\13416\Documents\GitHub\DailyStudy\image\image-20200225162826268.png" alt="image-20200225162826268" style="zoom:67%;" />
+11. <img src="image\image-20200225162826268.png" alt="image-20200225162826268" style="zoom:67%;" />
 
 12. // 是C99的注释，ANSI C 不支持
 
-13. <img src="C:\Users\13416\Documents\GitHub\DailyStudy\image\image-20200225164330314.png" alt="image-20200225164330314" style="zoom:60%;" />
+13. <img src="image\image-20200225164330314.png" alt="image-20200225164330314" style="zoom:60%;" />
 
 14. switch(a) a必须是int类型的数
 
@@ -55,25 +55,25 @@
 
     ● 其他情况用while
 
-19. <img src="C:\Users\13416\Documents\GitHub\DailyStudy\image\image-20200226204115908.png" alt="image-20200226204115908" style="zoom:70%;" />
+19. <img src="image\image-20200226204115908.png" alt="image-20200226204115908" style="zoom:70%;" />
 
-20. <img src="C:\Users\13416\Documents\GitHub\DailyStudy\image\image-20200226204443141.png" alt="image-20200226204443141" style="zoom: 80%;" />![image-20200226204513561](C:\Users\13416\Documents\GitHub\DailyStudy\image\image-20200226204513561.png)
+20. <img src="image\image-20200226204443141.png" alt="image-20200226204443141" style="zoom: 80%;" />![image-20200226204513561](image\image-20200226204513561.png)
 
 21. sizeof是静态运算符，它的结果在编译时刻就决定了，在sizeof括号中的运算是不会做的
 
-22. <img src="C:\Users\13416\Documents\GitHub\DailyStudy\image\image-20200226204837500.png" alt="image-20200226204837500" style="zoom:67%;" />
+22. <img src="image\image-20200226204837500.png" alt="image-20200226204837500" style="zoom:67%;" />
 
     64位编译器下long是8位，32位编译器下为4位  int和long表示“一个字”，受计算机影响，表达寄存器的字长
 
-23. <img src="C:\Users\13416\Documents\GitHub\DailyStudy\image\image-20200226205329934.png" alt="image-20200226205329934" style="zoom:80%;" />
+23. <img src="image\image-20200226205329934.png" alt="image-20200226205329934" style="zoom:80%;" />
 
 24.  11111111被当作纯二进制看待时，是225，被当作补码看待时是-1。
 
     同理，对于-a，其补码就是 0 - a，实际就是 2^n - a，n是这种类型的位数
 
-25. <img src="C:\Users\13416\Documents\GitHub\DailyStudy\image\image-20200226205918119.png" alt="image-20200226205918119" style="zoom:67%;" />
+25. <img src="image\image-20200226205918119.png" alt="image-20200226205918119" style="zoom:67%;" />
 
-26. <img src="C:\Users\13416\Documents\GitHub\DailyStudy\image\image-20200227113455816.png" alt="image-20200227113455816" style="zoom:80%;" />
+26. <img src="image\image-20200227113455816.png" alt="image-20200227113455816" style="zoom:80%;" />
 
 27. <img src="C:\Users\13416\AppData\Roaming\Typora\typora-user-images\image-20200227113513176.png" alt="image-20200227113513176" style="zoom:67%;" />
 
@@ -85,11 +85,11 @@
 
     
 
-29. <img src="C:\Users\13416\Documents\GitHub\DailyStudy\image\image-20200227115248189.png" alt="image-20200227115248189" style="zoom:67%;" />![](C:\Users\13416\Documents\GitHub\DailyStudy\image\image-20200227120052720.png)
+29. <img src="image\image-20200227115248189.png" alt="image-20200227115248189" style="zoom:67%;" />![](image\image-20200227120052720.png)
 
 30.  \ t  到下一个表格位  \ b 是回退一格，shell将其理解为返回一格并将后面的元素写在这个位置，不同的shell也可能不同理解。 \ n 被翻译成要做回车\r和换行\n两个动作
 
-31. <img src="C:\Users\13416\Documents\GitHub\DailyStudy\image\image-20200227115248189.png" alt="image-20200227115248189" style="zoom:67%;" />![](C:\Users\13416\Documents\GitHub\DailyStudy\image\image-20200227120052720.png)
+31. <img src="image\image-20200227115248189.png" alt="image-20200227115248189" style="zoom:67%;" />![](image\image-20200227120052720.png)
 
 32. ```
     #include<stdbool.h>
@@ -102,11 +102,11 @@
 
 34.  单一出口理念
 
-35. <img src="C:\Users\13416\Documents\GitHub\DailyStudy\image\image-20200227130731561.png" alt="image-20200227130731561" style="zoom:100%;" />
+35. <img src="image\image-20200227130731561.png" alt="image-20200227130731561" style="zoom:100%;" />
 
 36. 
 
-![image-20200227130752615](C:\Users\13416\Documents\GitHub\DailyStudy\image\image-20200227130752615.png)
+![image-20200227130752615](image\image-20200227130752615.png)
 
   C99 可以这么定义数组
 
@@ -126,11 +126,11 @@
     int b[]  // = int * const b
     ```
 
-41. <img src="C:\Users\13416\Documents\GitHub\DailyStudy\image\image-20200228231637158.png" alt="image-20200228231637158" style="zoom:80%;" />
+41. <img src="image\image-20200228231637158.png" alt="image-20200228231637158" style="zoom:80%;" />
 
-42. <img src="C:\Users\13416\Documents\GitHub\DailyStudy\image\image-20200228231935936.png" alt="image-20200228231935936" style="zoom:80%;" />
+42. <img src="image\image-20200228231935936.png" alt="image-20200228231935936" style="zoom:80%;" />
 
-43. <img src="C:\Users\13416\Documents\GitHub\DailyStudy\image\image-20200228232139710.png" alt="image-20200228232139710" style="zoom:80%;" />
+43. <img src="image\image-20200228232139710.png" alt="image-20200228232139710" style="zoom:80%;" />
 
       const 在 * 的后面表示指针不能被修改
 
@@ -138,6 +138,6 @@
     const int a[] = {1,2,3,4,5,6}  // const表示数组中的每一个元素都不能被修改，必须在开始就赋值
     ```
 
-45. <img src="C:\Users\13416\Documents\GitHub\DailyStudy\image\image-20200228232809134.png" alt="image-20200228232809134" style="zoom:80%;" />
+45. <img src="image\image-20200228232809134.png" alt="image-20200228232809134" style="zoom:80%;" />
 
 46. 
