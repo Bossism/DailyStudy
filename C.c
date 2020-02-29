@@ -336,7 +336,7 @@ int main() {
     return 0;
 }*/
 
-#include<stdio.h>
+/*#include<stdio.h>
 int main() {
     int n;
     scanf("%d",&n);
@@ -397,4 +397,117 @@ int main() {
     printf("\n");
     
     return 0;
+}*/
+
+//数组的应用
+/*#include<stdio.h>
+int main(int argc, char const *argv[])
+{
+    int ch;
+    while ( (ch = getchar()) != EOF)
+    {
+        putchar(ch);
+    }
+    
+    return 0;
+}*/
+
+/*#include<stdio.h>
+#include<string.h>
+size_t mylen(const char* s);
+int main(int argc, char const *argv[])
+{
+    char line[] = "hello";
+    printf("mylen=%lu\n",mylen(line));
+    printf("sizeof=%lu\n",sizeof(line));
+    return 0;
 }
+size_t mylen(const char* s)
+{
+    int idx = 0;
+    while ( s[idx] != '\0')
+    {
+        idx++;
+    }
+    return idx;
+    
+}*/
+
+/*#include<stdio.h>
+#include<string.h>
+int mycmp(const char* s1,const char* s2);
+int main(int argc, char const *argv[])
+{
+    char s1[] = "abc";
+    char s2[] = "bcd";
+    printf("%d\n",mycmp(s1,s2));
+    printf("%d\n",'a'-'A');
+    return 0;
+}
+int mycmp(const char* s1,const char* s2) {
+    int idx = 0;
+    while (s1[idx] == s2[idx] && s1[idx] != '\0') {
+        idx++;
+    }
+    return s1[idx] - s2[idx];   
+
+    //while( *s1 == *s2 && *s1 != '\0') {
+    //    s1++;
+     //   s2++:
+   // }
+   // return *s1 - *s2;
+}*/
+
+/*char* mycpy(char* dst,const char* src) {
+    // int idx = 0;
+    // while( src[idx]) {
+    //     dst[idx] = src[idx];
+    //     idx++;
+    // }
+    // dst[idx] = '\0';
+    char* ret = dst;
+    while( *dst++ = *src++ );
+    *dst = '\0';
+    return ret;
+}*/
+
+/*#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+int main(int argc, char const *argv[])
+{
+    char s[] = "hello";
+    char *p = strchr(s,'l');
+    char c = *p;
+    *p = '\0';
+    char *t = (char*)malloc(strlen(p)+1);
+    // strcpy(t,p);
+    strcpy(t,s);
+    // p = strchr(p+1,'l');
+    // printf("%s\n",p);
+    printf("%s\n",t);
+    free(t);
+    return 0;
+}*/
+
+#include<stdio.h>
+enum COLOR {RED,YELLOW,GREEN,NumCOLORS};
+int main(int argc, char const *argv[])
+{
+    int color = -1;
+    char *ColorNames[NumCOLORS] = {"red","yellow","green"};
+    char *colorName =  NULL;
+    printf("输入你喜欢的颜色的代码:");
+    scanf("%d",&color);
+    if( color >=0 && color < NumCOLORS) {
+        colorName = ColorNames[color];
+    } else {
+        colorName = "unknown";
+    }
+    printf("你喜欢的颜色是%s\n",colorName);
+    return 0;
+}
+
+
+
+

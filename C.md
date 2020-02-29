@@ -140,4 +140,19 @@
 
 45. <img src="image\image-20200228232809134.png" alt="image-20200228232809134" style="zoom:80%;" />
 
-46. 
+46. <img src="image\image-20200229134333674.png" alt="image-20200229134333674" style="zoom:67%;" />
+
+47. <img src="image\image-20200229141933270.png" alt="image-20200229141933270" style="zoom:67%;" />
+
+48.  ctrl + z win  /  ctrl + d  linux  EOF
+
+49. <img src="image\image-20200229143906811.png" alt="image-20200229143906811" style="zoom:67%;" />
+
+50.  枚举实际上是 int  类型，在C语言中主要是将其当作符号量来使用，而不是某种类型。
+
+    ```
+    enum COLOR {RED,YELLOW,GREEN,NumCOLORS};
+    
+    ```
+
+51. 
