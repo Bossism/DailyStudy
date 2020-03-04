@@ -490,7 +490,7 @@ int main(int argc, char const *argv[])
     return 0;
 }*/
 
-#include<stdio.h>
+/*#include<stdio.h>
 enum COLOR {RED,YELLOW,GREEN,NumCOLORS};
 int main(int argc, char const *argv[])
 {
@@ -506,7 +506,134 @@ int main(int argc, char const *argv[])
     }
     printf("你喜欢的颜色是%s\n",colorName);
     return 0;
+}*/
+
+/*#include<stdio.h>
+#include<stdlib.h>
+typedef struct node
+{
+    int value;
+    struct node *next;
+}Node; 
+int main(int argc, char const *argv[])
+{
+    Node * head = NULL;
+    int number;
+    do {
+        scanf("%d",&number);
+        if( number != -1) {
+            Node *p = (Node*)malloc(sizeof(Node));
+            p->value = number;
+            p->next = NULL;
+            Node *last = head;
+            if( last ) {
+                while( last->next) {
+                    last = last->next;
+                }
+                last->next = p;
+            } else {
+                head = p;
+            }
+        }
+
+    }while(number != -1);
+    return 0;
+}*/
+
+/*#include<stdio.h>
+#include<stdlib.h>
+typedef struct node
+{
+    int value;
+    struct node *next;
+}Node;
+
+typedef struct _list {
+    Node* head;
+    Node* tail;
+}List;
+
+void add(List* plist,int number);
+void print(List *list);
+
+int main(int argc, char const *argv[])
+{
+    // Node *head = NULL;
+    List list;
+    int number;
+    list.head = list.tail = NULL;
+    do
+    {
+        scanf("%d",&number);
+        if( number != -1) {
+            add(&list,number);
+        }
+    } while ( number != -1);
+    print(&list);
+
+    scanf("%d",&number);
+    Node *p;
+    int isFound = 0;
+    for( p=list.head; p; p=p->next) {
+        if( p->value == number) {
+            print("找到了！\n");
+            isFound = 1;
+            break;
+        }
+    }
+    if( !isFound ) {
+        print("没找到！\n");
+    }
+
+    Node *q;
+    for ( q=NULL,p=list.head; p; q=p,p=p->next) {
+        if( p->value == number) {
+            if( q ) {
+                q->next = p->next;
+            } else {
+                list.head = p->next;
+            }
+            free(p);
+            break;
+        }
+    }
+
+    // for( p=head; p; p=q) {
+    //     q = p->next;
+    //     free(p);
+    // }
+
+    return 0;
 }
+
+void print(List *list) {
+    Node *p;
+    for( p=list->head; p ; p=p->next) {
+        printf("%d\t",p->value);
+    }
+    printf("\n");
+}
+void add(List* plist,int number) 
+{
+    Node *p = (Node*)malloc(sizeof(Node));
+    p->value = number;
+    p->next = NULL;
+    Node *last = plist->head;
+    if( last) {
+        while( last->next) {
+            last = last->next;
+        }
+        last->next = p;
+    } else {
+        plist->head = p;
+    }
+    // return head;
+} */
+
+
+
+
+
 
 
 
