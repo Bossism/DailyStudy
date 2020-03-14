@@ -42,6 +42,8 @@ int main(int argc, char const *argv[])
         GetElem(Lb,i,&e);
         if( !LocateElem(La,e)) {
             ListInsert(&La,3,e);
+            // ListInsert(&La,++la_len,e);    这样写为什么就添加不进去呢...求解答
+
         }
     }
     for(  int i = 0;i< La.length; i++) {
