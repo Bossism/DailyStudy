@@ -17,7 +17,14 @@ int ClearList( LinkList *L);
 int main(int argc, char const *argv[])
 {
     LinkList L;
+    int e;
     CreateListHead(&L,10);
+    Print(L);
+    GetElem(L,3,&e);
+    printf("%d \n",e);
+    ListDelete(&L,5,&e);
+    Print(L);
+    ListInsert(&L,5,1000);
     Print(L);
     return 0;
 }
@@ -82,34 +89,34 @@ int ListDelete( LinkList *L,int i,int *e) {
 }
 
 /* 头插法 */
-void CreateListHead( LinkList *L,int n) {
-    LinkList p;
-    srand( time(0));
-    *L = ( LinkList )malloc(sizeof(Node));
-    (*L)->next = NULL;
-    for ( int i = 0; i< n;i++) {
-        p = (LinkList)malloc(sizeof(Node));
-        p->data = rand()%100 +1;
-        p->next = (*L)->next;
-        (*L)->next = p;
-    }
-}
-
-/* 尾插法 */
 // void CreateListHead( LinkList *L,int n) {
-//     LinkList p,r;
+//     LinkList p;
 //     srand( time(0));
-//     // L = (LinkList *)malloc(sizeof(Node));
 //     *L = ( LinkList )malloc(sizeof(Node));
-//     r = *L;  // r为指向尾部的节点
+//     (*L)->next = NULL;
 //     for ( int i = 0; i< n;i++) {
 //         p = (LinkList)malloc(sizeof(Node));
 //         p->data = rand()%100 +1;
-//         r->next = p;  // 将尾部终端节点的指针指向新节点
-//         r = p;  // 将当前的新节点定义为尾表终端结点
+//         p->next = (*L)->next;
+//         (*L)->next = p;
 //     }
-//     r->next = NULL;  //表示当前结点结束
 // }
+
+/* 尾插法 */
+void CreateListHead( LinkList *L,int n) {
+    LinkList p,r;
+    srand( time(0));
+    // L = (LinkList *)malloc(sizeof(Node));   错误写法
+    *L = ( LinkList )malloc(sizeof(Node));
+    r = *L;  // r为指向尾部的节点
+    for ( int i = 0; i< n;i++) {
+        p = (LinkList)malloc(sizeof(Node));
+        p->data = rand()%100 +1;
+        r->next = p;  // 将尾部终端节点的指针指向新节点
+        r = p;  // 将当前的新节点定义为尾表终端结点
+    }
+    r->next = NULL;  //表示当前结点结束
+}
 
 int ClearList( LinkList *L) {
     LinkList p,q;
