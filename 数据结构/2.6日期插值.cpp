@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-#define  ISYEAP(x) x%100 != 100 && x%4 == 0 || x%400 == 0 ? 1:0
+#define  ISYEAP(x) x%100 != 0 && x%4 == 0 || x%400 == 0 ? 1:0
 
 int dayofMonth[13][2] = {0,0,31,31,28,29,31,31,30,30,
 31,31,30,30,31,31,31,31,30,30,31,31,30,30,31,31,};
@@ -44,7 +44,7 @@ int main(int argc, char const *argv[])
     int d2,m2,y2;
     while ( scanf("%4d%2d%2d",&y1,&m1,&d1) != EOF) {
         scanf( "%4d%2d%2d",&y2,&m2,&d2);
-        printf("%d\n",Abs(buf[y2][m2][d2] - buf[y1][m1][d1]))
+        printf("%d\n",Abs(buf[y2][m2][d2] - buf[y1][m1][d1]));
     }
     return 0;
 }
